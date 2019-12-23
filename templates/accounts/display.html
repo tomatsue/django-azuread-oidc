@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="container">
+    <h2>Graph API Call Result</h2>
+    <table> {% for key, value in result.items %}
+    <tr>
+        <th>{{ key }}</th>
+        <td>{{ value }}</td>
+    </tr>
+    {% endfor %} </table>
+    <a href="javascript:window.history.go(-1)">Back</a>
+</section>
+{% endblock %}

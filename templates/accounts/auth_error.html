@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="container">
+    <h2>Login Failure</h2>
+    <dl>
+      <dt>{{ error }}</dt>
+      <dd>{{ error_description }}</dd>
+    </dl>
+</section>
+{% endblock %}

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/milligram/1.3.0/milligram.css">
+    <title>{% block title %}Sample Web App{% endblock %}</title>
+</head>
+
+<body>
+    <header>
+        <section class="container">
+        {% block header %}<a href='/'><h1>Sample Web App</h1></a>{% endblock %}
+        </section>
+    </header>
+    <div id="content">
+        {% block content %}{% endblock %}
+    </div>
+</body>
+</html>

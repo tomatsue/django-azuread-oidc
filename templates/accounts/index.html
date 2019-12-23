@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block content %}
+{% if user.username %}
+    <section class="container">
+        <p>Welcom, <b>{{ user.username }}</b>.</p>
+
+        <ul>
+            <li><a href="/accounts/graphcall/">Graph API Call</a></li>
+            {% if user.is_staff %}
+                <li><a href="/admin/">Admin Page</a></li>
+            {% endif %}
+        </ul>
+        
+        <a class="button" href="{% url 'logout' %}">logout</a>
+    </section>
+{% endif %}
+{% endblock %}
